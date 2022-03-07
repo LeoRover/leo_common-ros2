@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<package format="3">
-  <name>leo_teleop</name>
+<package format="2">
+  <name>leo_msgs</name>
   <version>2.1.0</version>
   <description>
-    Scripts and launch files for Leo Rover teleoperation
+    Message and Service definitions for Leo Rover
   </description>
 
   <maintainer email="support@fictionlab.pl">Fictionlab</maintainer>
@@ -11,18 +11,19 @@
 
   <license>MIT</license>
 
-  <url type="website">http://wiki.ros.org/leo_teleop</url>
+  <url type="website">http://wiki.ros.org/leo</url>
   <url type="bugtracker">https://github.com/LeoRover/leo_common/issues</url>
   <url type="repository">https://github.com/LeoRover/leo_common</url>
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
 
-  <exec_depend>joy</exec_depend>
-  <exec_depend>teleop_twist_joy</exec_depend>
-  <exec_depend>teleop_twist_keyboard</exec_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>std_msgs</depend>
 
   <export>
-    <build_type>ament_cmake</build_type>
+    <architecture_independent/>
   </export>
 
 </package>
