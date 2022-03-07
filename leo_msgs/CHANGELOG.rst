@@ -2,8 +2,8 @@
 Changelog for package leo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.2 (2022-03-07)
+------------------
 * Set interface dependencies in CMakeLists
 * Don't set build export dependency for builtin_interfaces
 
