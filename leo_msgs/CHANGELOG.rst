@@ -2,8 +2,8 @@
 Changelog for package leo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.1 (2022-03-07)
+------------------
 * Add builtin_interfaces to dependencies
 
 1.0.0 (2022-03-07)
