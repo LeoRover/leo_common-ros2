@@ -1,21 +1,13 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(leo_msgs)
 
-find_package(catkin REQUIRED COMPONENTS
-  message_generation
-  std_msgs
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Imu.msg"
+  "msg/WheelOdom.msg"
+  "msg/WheelStates.msg"
 )
 
-add_message_files(FILES
-  Imu.msg
-  WheelOdom.msg
-  WheelStates.msg
-)
-
-generate_messages()
-
-catkin_package(
-  CATKIN_DEPENDS
-    message_runtime
-    std_msgs
-)
+ament_package()

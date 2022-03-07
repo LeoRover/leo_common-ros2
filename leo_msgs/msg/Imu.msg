@@ -4,7 +4,7 @@
 # The gyro_* fields represent the rotational velocity in rad/s
 # The accel_* fields represent the linear acceleration in m/s^2
 
-time stamp
+builtin_interfaces/Time stamp
 float32 temperature
 float32 gyro_x
 float32 gyro_y

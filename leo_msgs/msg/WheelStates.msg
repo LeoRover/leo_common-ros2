@@ -11,7 +11,7 @@
 # This message consists of a multiple arrays, one for each part of the wheel state.
 # The order of the wheels in each array is: FL, RL, FR, RR
 
-time stamp
+builtin_interfaces/Time stamp
 
 float32[4] position
 float32[4] velocity

@@ -5,7 +5,7 @@
 #
 # The coordinate frame that represents the robot is located at the center of rotation.
 
-time stamp
+builtin_interfaces/Time stamp
 float32 velocity_lin
 float32 velocity_ang
 float32 pose_x
