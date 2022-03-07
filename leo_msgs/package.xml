@@ -22,6 +22,8 @@
 
   <member_of_group>rosidl_interface_packages</member_of_group>
 
+  <depend>builtin_interfaces</depend>
+
   <export>
     <architecture_independent/>
     <build_type>ament_cmake</build_type>
