@@ -2,6 +2,11 @@
 Changelog for package leo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove architecture_independent from leo_msgs (`#1 <https://github.com/LeoRover/leo_common-ros2/issues/1>`_)
+* Contributors: Scott K Logan
+
 1.0.2 (2022-03-07)
 ------------------
 * Set interface dependencies in CMakeLists
