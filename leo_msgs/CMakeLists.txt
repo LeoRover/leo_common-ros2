@@ -9,6 +9,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Imu.msg"
   "msg/WheelOdom.msg"
   "msg/WheelStates.msg"
+  "srv/SetImuCalibration.srv"
   DEPENDENCIES builtin_interfaces
 )
 
