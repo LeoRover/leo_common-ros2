@@ -1,18 +1,16 @@
-name: CI
+name: CI-Humble
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - foxy
       - humble
   pull_request:
     branches:
-      - foxy
       - humble
 
 env:
- ROS_DISTRO: ${{ github.head_ref || github.ref_name }}
+ ROS_DISTRO: humble
 
 jobs:
   industrial_ci:
@@ -28,7 +26,7 @@ jobs:
       - name: Source tests
         uses: "ros-industrial/industrial_ci@master"
         env:
-          DOWNSTREAM_WORKSPACE: "github:LeoRover/leo_desktop-ros2#${{ env.ROS_DISTRO }}"
+          DOWNSTREAM_WORKSPACE: "github:LeoRover/leo_desktop-ros2#humble github:LeoRover/leo_desktop-ros2#humble"
 
   ament_lint:
     name: ament_${{ matrix.linter }}
