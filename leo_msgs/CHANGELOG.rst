@@ -2,8 +2,8 @@
 Changelog for package leo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2022-08-31)
+------------------
 * Add service definition for setting IMU calibration (`#2 <https://github.com/LeoRover/leo_common-ros2/issues/2>`_)
 * Contributors: Aleksander Szymański
 
