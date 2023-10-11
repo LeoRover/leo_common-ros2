@@ -390,6 +390,7 @@
       <plugin
         filename="ignition-gazebo-joint-state-publisher-system"
         name="ignition::gazebo::systems::JointStatePublisher">
+        <topic>${link_prefix}joint_states</topic>
       </plugin>
     </gazebo>
 
