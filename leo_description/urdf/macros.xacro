@@ -241,104 +241,152 @@
 
     <!-- base ODE properties -->
     <gazebo reference="${link_prefix}base_footprint">
-      <kp>1e6</kp>
-      <kd>1.0</kd>
-      <mu>0.3</mu>
-      <mu2>0.3</mu2>
-      <minDepth>0.003</minDepth>
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
 
     <gazebo reference="${link_prefix}base_link">
-      <kp>1e6</kp>
-      <kd>1.0</kd>
-      <mu>0.3</mu>
-      <mu2>0.3</mu2>
-      <minDepth>0.003</minDepth>
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
 
     <!-- rocker ODE properties -->
     <gazebo reference="${link_prefix}rocker_L_link">
-      <kp>1e6</kp>
-      <kd>1.0</kd>
-      <mu>0.3</mu>
-      <mu2>0.3</mu2>
-      <minDepth>0.003</minDepth>
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
 
     <gazebo reference="${link_prefix}rocker_R_link">
-      <kp>1e6</kp>
-      <kd>1.0</kd>
-      <mu>0.3</mu>
-      <mu2>0.3</mu2>
-      <minDepth>0.003</minDepth>
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
     <!-- wheel ODE properties -->
     <gazebo reference="${link_prefix}wheel_FL_link">
-      <surface>
-        <friction>
-          <ode>
-            <mu>3.0</mu>
-            <mu2>1.0</mu2>
-            <fdir1>1 0 0</fdir1>
-          </ode>
-          <bullet>
-            <friction>1</friction>
-            <friction2>1</friction2>
-            <rolling_friction>0.1</rolling_friction>
-          </bullet>
-        </friction>
-      </surface>
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+              <fdir1>0 0 0</fdir1>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
 
     <gazebo reference="${link_prefix}wheel_FR_link">
-      <surface>
-        <friction>
-          <ode>
-            <mu>3.0</mu>
-            <mu2>1.0</mu2>
-            <fdir1>1 0 0</fdir1>
-          </ode>
-          <bullet>
-            <friction>1</friction>
-            <friction2>1</friction2>
-            <rolling_friction>0.1</rolling_friction>
-          </bullet>
-        </friction>
-      </surface>  
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+              <fdir1>0 0 0</fdir1>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
 
     <gazebo reference="${link_prefix}wheel_RL_link">
-      <surface>
-        <friction>
-          <ode>
-            <mu>3.0</mu>
-            <mu2>1.0</mu2>
-            <fdir1>1 0 0</fdir1>
-          </ode>
-          <bullet>
-            <friction>1</friction>
-            <friction2>1</friction2>
-            <rolling_friction>0.1</rolling_friction>
-          </bullet>
-        </friction>
-      </surface>
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+              <fdir1>0 0 0</fdir1>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
 
     <gazebo reference="${link_prefix}wheel_RR_link">
-      <surface>
-        <friction>
-          <ode>
-            <mu>3.0</mu>
-            <mu2>1.0</mu2>
-            <fdir1>1 0 0</fdir1>
-          </ode>
-          <bullet>
-            <friction>1</friction>
-            <friction2>1</friction2>
-            <rolling_friction>0.1</rolling_friction>
-          </bullet>
-        </friction>
-      </surface>
+      <collision>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+              <fdir1>0 0 0</fdir1>
+            </ode>
+            <bullet>
+              <friction>1</friction>
+              <friction2>1</friction2>
+              <rolling_friction>0.1</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
     </gazebo>
 
     <!-- camera -->
