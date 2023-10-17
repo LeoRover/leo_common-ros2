@@ -439,6 +439,9 @@
         name="ignition::gazebo::systems::JointStatePublisher">
         <topic>${link_prefix}joint_states</topic>
       </plugin>
+      <plugin filename="libignition-gazebo-imu-system.so"
+        name="ignition::gazebo::systems::Imu">
+      </plugin>
     </gazebo>
 
     <gazebo reference="${link_prefix}imu_frame">
