@@ -427,7 +427,7 @@
 
     <!-- rocker differential -->
     <gazebo>
-      <plugin name="leo_gz::DifferentialSystem" filename="libleo_gazebo_differential_plugin.so">
+      <plugin name="leo_gz::DifferentialSystem" filename="libleo_gz_differential_plugin.so">
         <jointA>rocker_L_joint</jointA>
         <jointB>rocker_R_joint</jointB>
         <forceConstant>100.0</forceConstant>
