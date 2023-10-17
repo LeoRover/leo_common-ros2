@@ -5,8 +5,7 @@
                params="default_antenna:=true
                        rockers_fixed:=true
                        footprint_link:=true
-                       link_prefix:=''
-                       joint_prefix:=''
+                       link_prefix:='' 
                        imu_translation:='0.0628 -0.0314 -0.0393'">
 
     <xacro:macro name="rocker_link" params="name">
@@ -131,7 +130,7 @@
     <!-- JOINTS -->
 
     <xacro:if value="${footprint_link}">
-      <joint name="${joint_prefix}base_joint" type="fixed">
+      <joint name="base_joint" type="fixed">
         <origin xyz="0 0 0.19783" rpy="0 0 0"/>
         <parent link="${link_prefix}base_footprint"/>
         <child link="${link_prefix}base_link"/>
@@ -145,7 +144,7 @@
       <xacro:property name="rockers_joint_type" value="revolute"/>
     </xacro:unless>
 
-    <joint name="${joint_prefix}rocker_L_joint" type="${rockers_joint_type}">
+    <joint name="rocker_L_joint" type="${rockers_joint_type}">
       <origin xyz="0.00263 0.14167 -0.04731" rpy="0 0 ${pi}"/>
       <parent link="${link_prefix}base_link"/>
       <child link="${link_prefix}rocker_L_link"/>
@@ -154,7 +153,7 @@
       <dynamics friction="1.0" damping="0.1"/>
     </joint>
 
-    <joint name="${joint_prefix}rocker_R_joint" type="${rockers_joint_type}">
+    <joint name="rocker_R_joint" type="${rockers_joint_type}">
       <origin xyz="0.00263 -0.14167 -0.04731" rpy="0 0 0"/>
       <parent link="${link_prefix}base_link"/>
       <child link="${link_prefix}rocker_R_link"/>
@@ -164,7 +163,7 @@
       <mimic joint="rocker_L_joint"/>
     </joint>
 
-    <joint name="${joint_prefix}wheel_FL_joint" type="continuous">
+    <joint name="wheel_FL_joint" type="continuous">
       <origin xyz="-0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
       <parent link="${link_prefix}rocker_L_link"/>
       <child link="${link_prefix}wheel_FL_link"/>
@@ -173,7 +172,7 @@
       <dynamics friction="0.3125" damping="0.1"/>
     </joint>
 
-    <joint name="${joint_prefix}wheel_RL_joint" type="continuous">
+    <joint name="wheel_RL_joint" type="continuous">
       <origin xyz="0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
       <parent link="${link_prefix}rocker_L_link"/>
       <child link="${link_prefix}wheel_RL_link"/>
@@ -182,7 +181,7 @@
       <dynamics friction="0.3125" damping="0.1"/>
     </joint>
 
-    <joint name="${joint_prefix}wheel_FR_joint" type="continuous">
+    <joint name="wheel_FR_joint" type="continuous">
       <origin xyz="0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
       <parent link="${link_prefix}rocker_R_link"/>
       <child link="${link_prefix}wheel_FR_link"/>
@@ -191,7 +190,7 @@
       <dynamics friction="0.3125" damping="0.1"/>
     </joint>
 
-    <joint name="${joint_prefix}wheel_RR_joint" type="continuous">
+    <joint name="wheel_RR_joint" type="continuous">
       <origin xyz="-0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
       <parent link="${link_prefix}rocker_R_link"/>
       <child link="${link_prefix}wheel_RR_link"/>
@@ -201,26 +200,26 @@
     </joint>
 
     <xacro:if value="${default_antenna}">
-      <joint name="${joint_prefix}antenna_joint" type="fixed">
+      <joint name="antenna_joint" type="fixed">
         <origin xyz="-0.0052 0.056 -0.0065" rpy="0 0 0"/>
         <parent link="${link_prefix}base_link"/>
         <child link="${link_prefix}antenna_link"/>
       </joint>
     </xacro:if>
 
-    <joint name="${joint_prefix}camera_joint" type="fixed">
+    <joint name="camera_joint" type="fixed">
       <origin xyz="0.0971 0 -0.0427" rpy="0 0.2094 0"/>
       <parent link="${link_prefix}base_link"/>
       <child link="${link_prefix}camera_frame"/>
     </joint>
 
-    <joint name="${joint_prefix}camera_optical_joint" type="fixed">
+    <joint name="camera_optical_joint" type="fixed">
       <origin xyz="0 0 0" rpy="-${pi/2} 0.0 -${pi/2}"/>
       <parent link="${link_prefix}camera_frame"/>
       <child link="${link_prefix}camera_optical_frame"/>
     </joint>
 
-    <joint name="${joint_prefix}imu_joint" type="fixed">
+    <joint name="imu_joint" type="fixed">
       <origin xyz="${imu_translation}" rpy="0 0 0"/>
       <parent link="${link_prefix}base_link"/>
       <child link="${link_prefix}imu_frame"/>
@@ -456,10 +455,10 @@
       <plugin
         filename="libignition-gazebo-diff-drive-system.so"
         name="ignition::gazebo::systems::DiffDrive">
-        <left_joint>${joint_prefix}wheel_FL_joint</left_joint>
-        <right_joint>${joint_prefix}wheel_FR_joint</right_joint>
-        <left_joint>${joint_prefix}wheel_RL_joint</left_joint>
-        <right_joint>${joint_prefix}wheel_RR_joint</right_joint>
+        <left_joint>wheel_FL_joint</left_joint>
+        <right_joint>wheel_FR_joint</right_joint>
+        <left_joint>wheel_RL_joint</left_joint>
+        <right_joint>wheel_RR_joint</right_joint>
         <wheel_separation>0.358</wheel_separation>
         <wheel_radius>0.0625</wheel_radius>
         <frame_id>odom</frame_id>
@@ -490,11 +489,9 @@
 
     <xacro:leo default_antenna="${default_antenna}"
                rockers_fixed="false"
-               link_prefix="${link_prefix}"
-               joint_prefix="${joint_prefix}"/>
+               link_prefix="${link_prefix}"/>
 
-    <xacro:leo_gazebo robot_ns="${robot_ns}"
-    joint_prefix="${joint_prefix}"/>
+    <xacro:leo_gazebo robot_ns="${robot_ns}"/>
 
     <xacro:if value="${fixed}">
       <link name="world"/>
