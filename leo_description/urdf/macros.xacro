@@ -84,20 +84,14 @@
           </geometry>
         </visual>
         <collision>
-          <origin xyz="0 0.04485 0" rpy="${pi/2} 0 0"/>
+          <origin xyz="0 -0.0317 0" rpy="${pi/2} 0 0"/>
           <geometry>
-            <cylinder radius="0.057" length="0.07"/>
-          </geometry>
-        </collision>
-        <collision>
-          <origin xyz="0 0.04485 0" rpy="${pi/2} 0 0"/>
-          <geometry>
-            <cylinder radius="0.0625" length="0.04"/>
+            <cylinder radius="0.0635" length="0.0515"/>
           </geometry>
         </collision>
         <collision>
           <geometry>
-            <mesh filename="package://leo_description/models/Wheel_outline.stl"/>
+            <mesh filename="package://leo_description/models/Mecanum_wheel_outline.stl"/>
           </geometry>
         </collision>
       </link>
