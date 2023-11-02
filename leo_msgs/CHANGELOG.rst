@@ -2,8 +2,8 @@
 Changelog for package leo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.0 (2023-11-02)
+------------------
 * Update author and copyright info
 * Ci updates (`#7 <https://github.com/LeoRover/leo_common-ros2/issues/7>`_)
 * Mecanum Wheel Odom message (`#3 <https://github.com/LeoRover/leo_common-ros2/issues/3>`_)

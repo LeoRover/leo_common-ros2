@@ -2,8 +2,8 @@
 Changelog for package leo_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.0 (2023-11-02)
+------------------
 * Increase joystick deadzone
 * Switch to using joy_linux package instead of joy
 * Update author and copyright info
