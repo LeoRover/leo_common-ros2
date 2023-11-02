@@ -2,6 +2,14 @@
 Changelog for package leo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update author and copyright info
+* Add mecanum wheels to description package (`#6 <https://github.com/LeoRover/leo_common-ros2/issues/6>`_)
+* Ci updates (`#7 <https://github.com/LeoRover/leo_common-ros2/issues/7>`_)
+* Adjust description package to work in new Gazebo simulation (`#5 <https://github.com/LeoRover/leo_common-ros2/issues/5>`_)
+* Contributors: Aleksander Szymański, Błażej Sowa, Jan Hernas
+
 1.1.0 (2022-08-31)
 ------------------
 

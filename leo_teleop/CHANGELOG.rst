@@ -2,6 +2,15 @@
 Changelog for package leo_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Increase joystick deadzone
+* Switch to using joy_linux package instead of joy
+* Update author and copyright info
+* Ci updates (`#7 <https://github.com/LeoRover/leo_common-ros2/issues/7>`_)
+* Adapt joy_config to mecanum wheels (`#4 <https://github.com/LeoRover/leo_common-ros2/issues/4>`_)
+* Contributors: Aleksander Szymański, Błażej Sowa
+
 1.1.0 (2022-08-31)
 ------------------
 

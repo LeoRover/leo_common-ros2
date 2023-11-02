@@ -2,6 +2,13 @@
 Changelog for package leo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update author and copyright info
+* Ci updates (`#7 <https://github.com/LeoRover/leo_common-ros2/issues/7>`_)
+* Mecanum Wheel Odom message (`#3 <https://github.com/LeoRover/leo_common-ros2/issues/3>`_)
+* Contributors: Aleksander Szymański, Błażej Sowa
+
 1.1.0 (2022-08-31)
 ------------------
 * Add service definition for setting IMU calibration (`#2 <https://github.com/LeoRover/leo_common-ros2/issues/2>`_)
