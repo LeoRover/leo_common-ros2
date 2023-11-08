@@ -2,8 +2,8 @@
 Changelog for package leo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2023-11-08)
+------------------
 * Remove redundant ros2_control controller configuration
 * Contributors: Błażej Sowa
 
