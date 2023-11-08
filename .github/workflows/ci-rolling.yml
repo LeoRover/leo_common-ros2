@@ -1,16 +1,16 @@
-name: CI-Humble
+name: CI-Rolling
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - humble
+      - rolling
   pull_request:
     branches:
-      - humble
+      - rolling
 
 env:
- ROS_DISTRO: humble
+ ROS_DISTRO: rolling
 
 jobs:
   industrial_ci:
@@ -26,4 +26,4 @@ jobs:
       - name: Source tests
         uses: "ros-industrial/industrial_ci@master"
         env:
-          DOWNSTREAM_WORKSPACE: "github:LeoRover/leo_desktop-ros2#humble github:LeoRover/leo_robot-ros2#humble"
+          DOWNSTREAM_WORKSPACE: "github:LeoRover/leo_desktop-ros2#rolling"
