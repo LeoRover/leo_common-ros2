@@ -2,8 +2,8 @@
 Changelog for package leo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2024-02-13)
+------------------
 * Change wheel ode friction params (`#8 <https://github.com/LeoRover/leo_common-ros2/issues/8>`_) (`#10 <https://github.com/LeoRover/leo_common-ros2/issues/10>`_)
 * Contributors: Jan Hernas
 
