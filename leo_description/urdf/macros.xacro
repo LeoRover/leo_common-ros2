@@ -486,7 +486,6 @@
           <update_rate>30</update_rate>
           <visualize>true</visualize>
           <topic>${link_prefix}camera/image_raw</topic>
-          <ignition_frame_id>${link_prefix}camera_frame</ignition_frame_id>
           <gz_frame_id>${link_prefix}camera_frame</gz_frame_id>
       </sensor>
     </gazebo>
@@ -502,8 +501,8 @@
 
     <gazebo>
       <plugin
-        filename="ignition-gazebo-joint-state-publisher-system"
-        name="ignition::gazebo::systems::JointStatePublisher">
+        filename="libgz-sim-joint-state-publisher-system.so"
+        name="gz::sim::systems::JointStatePublisher">
         <topic>${link_prefix}joint_states</topic>
       </plugin>
     </gazebo>
@@ -514,15 +513,14 @@
         <visualize>true</visualize>
         <topic>${link_prefix}imu/data_raw</topic>
         <always_on>1</always_on>
-        <ignition_frame_id>${link_prefix}imu_frame</ignition_frame_id>
         <gz_frame_id>${link_prefix}imu_frame</gz_frame_id>
       </sensor>
     </gazebo>
     <gazebo>
     
       <plugin
-        filename="libignition-gazebo-diff-drive-system.so"
-        name="ignition::gazebo::systems::DiffDrive">
+        filename="libgz-sim-diff-drive-system.so"
+        name="gz::sim::systems::DiffDrive">
         <left_joint>wheel_FL_joint</left_joint>
         <right_joint>wheel_FR_joint</right_joint>
         <left_joint>wheel_RL_joint</left_joint>
