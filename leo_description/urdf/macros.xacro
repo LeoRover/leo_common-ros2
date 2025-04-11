@@ -465,7 +465,7 @@
                   <format>R8G8B8</format>
               </image>
               <clip>
-                  <near>0.2</near>
+                  <near>0.05</near>
                   <far>300</far>
               </clip>
               <noise>
