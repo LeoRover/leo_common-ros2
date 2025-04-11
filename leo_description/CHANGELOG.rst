@@ -2,6 +2,14 @@
 Changelog for package leo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Change simulated camera frame to camera_optical_frame
+* Reduce camera clip distance (`#21 <https://github.com/LeoRover/leo_common-ros2/issues/21>`_)
+* Remove ignition references from urdf (`#20 <https://github.com/LeoRover/leo_common-ros2/issues/20>`_)
+* Fix imu and camera frame ids (`#17 <https://github.com/LeoRover/leo_common-ros2/issues/17>`_)
+* Contributors: Błażej Sowa, Jan Hernas
+
 3.0.4 (2024-11-08)
 ------------------
 * Add dummy .sh file for .dsv hook (`#14 <https://github.com/LeoRover/leo_common-ros2/issues/14>`_)
