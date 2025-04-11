@@ -2,8 +2,8 @@
 Changelog for package leo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.0 (2025-04-11)
+------------------
 * Change simulated camera frame to camera_optical_frame
 * Reduce camera clip distance (`#21 <https://github.com/LeoRover/leo_common-ros2/issues/21>`_) (`#22 <https://github.com/LeoRover/leo_common-ros2/issues/22>`_)
 * Fix imu and camera frame ids (`#17 <https://github.com/LeoRover/leo_common-ros2/issues/17>`_) (`#19 <https://github.com/LeoRover/leo_common-ros2/issues/19>`_)
