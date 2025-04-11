@@ -2,8 +2,8 @@
 Changelog for package leo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.1.0 (2025-04-11)
+------------------
 * Change simulated camera frame to camera_optical_frame
 * Reduce camera clip distance (`#21 <https://github.com/LeoRover/leo_common-ros2/issues/21>`_)
 * Remove ignition references from urdf (`#20 <https://github.com/LeoRover/leo_common-ros2/issues/20>`_)
