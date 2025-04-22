@@ -507,7 +507,7 @@
         <topic>livox/lidar</topic>
         <update_rate>10</update_rate>
         <visualize>true</visualize>
-        <ray>
+        <lidar>
           <scan>
             <horizontal>
               <samples>640</samples>
@@ -532,8 +532,8 @@
             <mean>0.0</mean>
             <stddev>0.01</stddev>
           </noise>
-        </ray>
-        <ignition_frame_id>${link_prefix}livox_frame</ignition_frame_id>
+        </lidar>
+        <gz_frame_id>${link_prefix}livox_frame</gz_frame_id>
       </sensor>
     </gazebo>
 
@@ -570,7 +570,7 @@
           <update_rate>30</update_rate>
           <visualize>true</visualize>
           <topic>${link_prefix}camera/image_raw</topic>
-          <ignition_frame_id>${link_prefix}camera_frame</ignition_frame_id>
+          <gz_frame_id>${link_prefix}camera_frame</gz_frame_id>
       </sensor>
     </gazebo>
 
@@ -600,7 +600,7 @@
         <visualize>true</visualize>
         <topic>${link_prefix}imu/data_raw</topic>
         <always_on>1</always_on>
-        <ignition_frame_id>${link_prefix}imu_frame</ignition_frame_id>
+        <gz_frame_id>${link_prefix}imu_frame</gz_frame_id>
       </sensor>
     </gazebo>
     <gazebo>
