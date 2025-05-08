@@ -11,11 +11,11 @@ on:
 
 jobs:
   industrial_ci:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
-        ROS_DISTRO: [jazzy, rolling]
+        ROS_DISTRO: [jazzy, kilted, rolling]
         ROS_REPO: [testing, main]
     env:
       ROS_DISTRO: ${{ matrix.ROS_DISTRO }}
@@ -26,4 +26,4 @@ jobs:
       - name: Source tests
         uses: "ros-industrial/industrial_ci@master"
         env:
-          DOWNSTREAM_WORKSPACE: "github:LeoRover/leo_desktop-ros2#${{ matrix.ROS_DISTRO }}"
+          DOWNSTREAM_WORKSPACE: "github:LeoRover/leo_desktop-ros2#ros2"
