@@ -2,6 +2,12 @@
 Changelog for package leo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.2.0 (2025-12-29)
+------------------
+* feat: Add ChargingMonitorData message type (`#27 <https://github.com/LeoRover/leo_common-ros2/issues/27>`_)
+* chore: Remove SetImuCalibration service type (`#23 <https://github.com/LeoRover/leo_common-ros2/issues/23>`_)
+* Contributors: Aleksander Szymański, Błażej Sowa
+
 3.1.0 (2025-04-11)
 ------------------
 

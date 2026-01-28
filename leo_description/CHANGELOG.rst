@@ -2,6 +2,9 @@
 Changelog for package leo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.2.0 (2025-12-29)
+------------------
+
 3.1.0 (2025-04-11)
 ------------------
 * Change simulated camera frame to camera_optical_frame
